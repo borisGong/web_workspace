@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				alert(escapeHtml("sdfsdfs'safdsa<sdfsdfsaf>sdfasdfas"));
+			});
+
+			function escapeHtml(string) {
+			    var entityMap = {
+			        "&": "&amp;",
+			        "<": "&lt;",
+			        ">": "&gt;",
+			        '"': '&quot;',
+			        "'": '&#39;',
+			        "/": '&#x2F;'
+			    };
+			    return String(string).replace(/[&<>"'\/]/g, function (s) {
+			        return entityMap[s];
+			    });
+			}
+			var string5 = "<div class='div2' name='" + escapeHtml(str1) + "'>test2222</div>";
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+

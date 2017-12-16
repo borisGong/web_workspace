@@ -1,0 +1,799 @@
+﻿/*css reset*/
+div, span, ul, h1, h2, h3, h4, h5, h6, p, th, td {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    a div, a span {
+        cursor: pointer;
+    }
+
+.apps-clear-float {
+    clear: both;
+}
+/*Ribbon*/
+#suiteBarLeft {
+    background-color: #ececee;
+}
+
+.ms-core-suiteLink-a {
+    color: #666666 !important;
+}
+
+    .ms-core-suiteLink-a:hover {
+        background-color: #ffffff;
+    }
+
+#globalNavBox, .ms-clientcontrol-chromeheader, #suiteBarRight {
+    background-color: #ffffff;
+}
+
+.apps-portal-logo {
+    float: left;
+    /*padding-top: 5px;*/
+    padding-left: 20px;
+    margin-right: 5px;
+    display: inline;
+}
+
+/*Ribbon Color*/
+/*.ms-promotedActionButton-text, .ms-welcome-root > a.ms-core-menu-root, .ms-signInLink {
+    color: #d9d9d9;
+}
+.ms-promotedActionButton:hover .ms-promotedActionButton-text {
+    color: #fff;
+}
+.ms-cui-tt-a > .ms-cui-tt-span, .ms-browseTab.ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span {
+    color: #d9d9d9 !important;
+}
+.ms-welcome-hover > a.ms-core-menu-root {
+    color: #333;
+}*/
+
+/*for IE */
+.ms-core-needIEFilter #suiteBarLeft {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#2b2b2b,endColorstr=#2b2b2b);
+}
+
+.ms-core-needIEFilter #suiteBarRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#484848,endColorstr=#484848);
+}
+
+.ms-core-needIEFilter #globalNavBox {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#484848,endColorstr=#484848);
+}
+
+/*Ribbon Top Menu*/
+.ms-designer-ribbon {
+    position: relative;
+}
+
+/*APPS Mega Menu*/
+#apps-topMenu-panel {
+    height: 50px;
+    background-color: #434087;
+    border-bottom: 1px solid #69669f;
+    /*font-family: HelveTica, 'Segoe UI';*/
+}
+
+.apps-centerContent {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+#apps-homeMenu {
+    float: left;
+    width: 46px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px;
+    margin: 0px;
+    border-left: 1px solid #69669f;
+    border-right: 1px solid #69669f;
+    cursor:pointer;
+}
+
+.apps-homeMenu-icon {
+    background-image: url("/_layouts/15/images/InSite/Icon.png");
+    background-repeat: no-repeat;
+    background-position: -21px -189px;
+    width: 16px;
+    height: 16px;
+    margin-left:15px;
+    margin-top:17px;
+    cursor:pointer;
+}
+#apps-homeMenu:hover .apps-homeMenu-icon {
+    background-image: url("/_layouts/15/images/InSite/Icon.png");
+    background-repeat: no-repeat;
+    background-position: -21px -169px;
+    width: 16px;
+    height: 16px;
+}
+#apps-homeMenu:hover {    
+        background-color: #E4E4F8;
+    }
+
+.apps-homeMenu-link {
+    width: 46px;
+    height: 50px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#apps-megaMenu-ul {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    list-style: outside none none;
+    position: relative;
+    font-size: 14px;
+    height: 50px;
+}
+
+.apps-topMenu {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-right: 1px solid #69669f;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+    .apps-topMenu:hover {
+        background-color: #E4E4F8;
+        color: #443D88;
+    }
+
+    .apps-topMenu div {
+        cursor: pointer;
+    }
+
+.apps-subMenus-lv1 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    padding: 15px 15px 10px 15px;
+    z-index: 214748364;
+    background-color: rgba(237,237,253,0.95);
+    color: #444444;
+    line-height: normal;
+    list-style: outside none none;
+    cursor: default;
+}
+
+.apps-subMenu-lv1 {
+    width: 230px;
+    height: 53px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 15px 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.apps-subMenu-lv1-mouseenter {
+    color: white !important;
+    background-color: #695FB8 !important;
+}
+
+.apps-subMenu-lv1-selected {
+    color: white !important;
+    background-color: #695FB8 !important;
+}
+
+/*.apps-subMenu-lv1:hover {
+        color: white !important;
+        background-color: #695FB8 !important;
+    }
+
+        .apps-subMenu-lv1:hover .apps-subMenu-title div, .apps-subMenu-lv1:hover .apps-subMenu-des {
+            color: white;
+        }*/
+
+.apps-subMenu-lv1 div, .apps-subMenu-lv1 span {
+    cursor: pointer;
+}
+
+.apps-subMenu-info {
+    height: 58px;
+    padding: 0px;
+    background-color: transparent;
+    overflow: hidden;
+    width:160px;
+}
+
+.apps-subMenu-title {
+    margin-top: 15px;
+    width: 160px;
+    max-height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    /*color: #666666;*/
+    overflow: hidden;
+    margin-left: 10px;
+    float: left;
+}
+
+    .apps-subMenu-title div, {
+        word-wrap: break-word;
+    }
+
+.apps-subMenu-icon-showmenus {
+    position: absolute;
+    width: 4px;
+    height: 6px;
+    top: 15px;
+    left: 225px;
+    background-image: url(/_layouts/15/images/InSite/Icon.png);
+    background-repeat: no-repeat;
+    background-position:-485px -177px
+}
+
+ 
+
+.apps-subMenus-lv2 {
+    width: 120px;
+    position: absolute;
+    left: 240px;
+    z-index: 980;
+    padding: 20px 20px 20px 30px;
+    /*list-style: outside none none;*/
+    list-style-type: disc;
+    color: white;
+    background-color: #8580d2;
+}
+
+.apps-subMenu-lv2 {
+    margin-top: 15px;
+}
+
+    .apps-subMenu-lv2:first-child {
+        margin: 0px;
+    }
+
+.apps-subMenus-lv2-arrow1 {
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    top: 14px;
+    left: 227px;
+    background-image: url(/_layouts/15/images/InSite/Icon.png);
+    background-repeat: no-repeat;
+    background-position:-485px -187px
+}
+.apps-subMenu-icon {
+    width:48px;
+    height:48px;
+    float:left;
+    margin:0px;
+    padding:0px;
+}
+
+.apps-subMenus-lv3 {
+    min-width: 120px;
+    height: 180px;
+    position: absolute;
+    top: -20px;
+    left: 130px;
+    z-index: 990;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 15px 20px 15px;
+    list-style: outside none none;
+    color: white;
+    background-color: #867DD4;
+}
+
+.apps-subMenu-lv3 {
+    margin: 15px 0px 0px 0px;
+    padding: 0px;
+}
+
+    .apps-subMenu-lv3:first-child {
+        margin: 0px;
+    }
+
+    .apps-subMenu-lv2 > a, .apps-subMenu-lv3 > a {
+        text-decoration: none;
+        color: white;
+    }
+
+        .apps-subMenu-lv2 > a:hover, apps-subMenu-lv2 > a:active, .apps-subMenu-l3 > a:hover, apps-subMenu-lvs3 > a:active {
+            color: white;
+            text-decoration: underline;
+        }
+
+.apps-menus-panel {
+    width: 940px;
+    float: left;
+}
+
+.apps-srchbox-panel {
+    width: 240px;
+    float: right;
+    padding-top: 13px;
+    text-align: right;
+}
+
+
+/*main page*/
+.apps-main-left {
+    float: left;
+    width: 720px;
+}
+
+.apps-main-right {
+    float: right;
+    width: 470px;
+}
+
+.apps-page-navigation {
+    width: 1200px;
+    overflow: hidden;
+}
+
+.apps-page-content {
+    width: 1200px;
+}
+
+#s4-workspace {
+    background-image: url(/_layouts/15/images/InSite/j_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#s4-bodyContainer {
+    min-height: 710px;
+    min-width: 1250px;
+}
+
+/*Footer*/
+.apps-footer {
+    padding-left: 20px;
+    margin-top: 21px;
+    position: relative;
+}
+
+.apps-footer-menu {
+    float: left;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: Arial;
+}
+
+
+.apps-footer-content {
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+    .apps-footer-content a {
+        color: #fff;
+    }
+
+.apps-bottom-company {
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.apps-bottom-link {
+    margin-left: 5px;
+}
+
+.apps-bottom-linktext {
+    text-decoration: underline;
+}
+
+.apps-bottom-content {
+}
+
+.apps-avepoint-logo {
+    height: 26px;
+    width: 26px;
+    background-image: url('/_layouts/15/images/InSite/Icon.png');
+    background-position:;
+    background-repeat: no-repeat;
+    background-position: -367px -45px;
+    display: inline-block;
+    float: right;
+    margin-left: 6px;
+    margin-right: 20px;
+}
+
+.apps-footer-menu a {
+    padding: 0px 10px 0px 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    .apps-footer-menu a:last-child {
+        border-right: none;
+    }
+
+    .apps-footer-menu a:hover {
+        color: #ffffff;
+    }
+
+.apps-footer-menu span {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/*Small Search Box*/
+#SearchBox .ms-srch-sb {
+    background-color: #5a57ad;
+}
+
+#SearchBox .ms-srch-sb-border {
+    border: none;
+}
+
+    #SearchBox .ms-srch-sb-border:hover {
+        border: none;
+    }
+
+#SearchBox .ms-srch-sb-borderFocused {
+    border: none;
+    background-color: #7d7de9;
+}
+
+#SearchBox .ms-textSmall {
+    height: 24px;
+    width: 153px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+#SearchBox .ms-srch-sb-searchLink {
+    height: 24px;
+    width: 24px;
+}
+
+#SearchBox .ms-srch-sb-navLink {
+    height: 24px;
+}
+
+    #SearchBox .ms-srch-sb-searchLink:hover, #SearchBox .ms-srch-sb-navLink:hover {
+        background-color: transparent;
+    }
+
+#searchImg, #searchImg:hover {
+    position: absolute;
+    left: -113px;
+    top: -29px;
+    background-color: transparent;
+}
+
+#navImg, #navImg:hover {
+    top: -33px;
+}
+
+.ms-srch-sb-searchLink:active,
+.ms-srch-sb-searchLink > img:active,
+.ms-srch-sb-navLink:active,
+.ms-srch-sb-navLink > img:active,
+.ms-srch-sb-navLink-menuOpen,
+.ms-srch-sb-navLink-menuOpen:hover {
+    background-color: transparent;
+}
+
+/*for page navigation*/
+.apps-pagenav-panel {
+    margin: 10px 0 10px 0;
+    font-size: 12px;
+    /*font-family: Helvetica,"Segoe UI";*/
+    text-align: left;
+    cursor: default;
+}
+
+.apps-pagenav-homemenu {
+    height: 26px;
+    background-color: rgba(67,64,135,0.8);
+    padding: 0 8px 0 8px;
+    margin: 0;
+    line-height: 26px;
+    white-space: nowrap;
+}
+
+.apps-pagenav-breadcrumb_1 {
+    width: 8px;
+    height: 26px;
+    display: block;
+    background-image: url('/_layouts/15/images/InSite/Icon.png');
+    background-repeat: no-repeat;
+    background-position: -397px -45px;
+}
+    .apps-pagenav-breadcrumb_1 div {
+        width: 8px;
+        height: 26px;
+    }
+
+.apps-pagenav-parentmenu {
+    height: 26px;
+    padding: 0 8px 0 8px;
+    background-color: rgba(67,64,135,0.8);
+    margin: 0;
+    line-height: 26px;
+    white-space: nowrap;
+}
+
+.apps-pagenav-breadcrumb_2 {
+    width: 8px;
+    height: 26px;
+    display: block;
+    background-image: url('/_layouts/15/images/InSite/Icon.png');
+    background-repeat: no-repeat;
+    background-position: -409px -45px;
+}
+
+    .apps-pagenav-breadcrumb_2 div {
+        width: 8px;
+        height: 26px;
+    }
+
+.apps-pagenav-submenu {
+    height: 26px;
+    width: 99%;
+    background-color: rgba(67,64,135,0.6);
+    padding: 0 8px 0 8px;
+    margin: 0;
+    line-height: 26px;
+    white-space: nowrap;
+}
+
+    .apps-pagenav-submenu > span {
+        display: block;
+        max-width: 900px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .apps-pagenav-homemenu a, .apps-pagenav-parentmenu a, .apps-pagenav-submenu a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+        .apps-pagenav-homemenu a:hover, .apps-pagenav-parentmenu a:hover, .apps-pagenav-submenu a:hover {
+            text-decoration: underline;
+        }
+
+    .apps-pagenav-homemenu span, .apps-pagenav-parentmenu span, .apps-pagenav-submenu span {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+        .apps-pagenav-homemenu span:hover, .apps-pagenav-parentmenu span:hover, .apps-pagenav-submenu span:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+.apps-pagenav-nolink, .apps-pagenav-nolink:hover {
+    text-decoration: none !important;
+    cursor: default;
+}
+/*end page navigation*/
+
+/*begain custom page pager*/
+.apps-common-paging {
+    height: 40px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.apps-common-paging-inner {
+    display: inline-block;
+}
+
+.apps-common-paging-num {
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #434087;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 5px;
+    margin: 8px 8px 7px 8px;
+    color: #434087;
+}
+
+.apps-common-paging-prev {
+    float: left;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #434087;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: #434087;
+    margin: 8px 0 7px 0;
+}
+
+.apps-common-paging-next {
+    float: left;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #434087;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: #434087;
+    margin: 8px 0 7px 0;
+}
+/*end custom page pager*/
+
+/*for custom Vertical scroll*/
+.jspContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.jspPane {
+    position: absolute;
+}
+
+.jspHorizontalBar {
+    display: none;
+}
+
+.jspVerticalBar * {
+    margin: 0;
+    padding: 0;
+}
+
+.jspCap {
+    display: none;
+}
+
+.jspArrow {
+    width: 14px;
+    height: 14px;
+    margin: 0 1px;
+    padding: 0;
+    background-color: rgba(255,255,255,0.4);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    text-align: center;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+}
+
+    .jspArrow.jspDisabled {
+    }
+
+.jspVerticalBar .jspArrow:focus {
+    outline: none;
+}
+
+.jspArrowUp {
+    background-image: url('/_layouts/15/images/InSite/scroll_up_nor.png');
+    background-repeat: no-repeat;
+    background-position: 3px 5px;
+}
+
+    .jspArrowUp.jspActive {
+        background-image: url('/_layouts/15/images/InSite/scroll_up_down.png');
+        background-color: rgba(255,255,255,1);
+    }
+
+.jspArrowDown {
+    background-image: url('/_layouts/15/images/InSite/scroll_down_nor.png');
+    background-repeat: no-repeat;
+    background-position: 3px 5px;
+}
+
+    .jspArrowDown.jspActive {
+        background-image: url('/_layouts/15/images/InSite/scroll_down_down.png');
+        background-color: rgba(255,255,255,1);
+    }
+
+.jspTrack {
+    position: relative;
+}
+
+.jspVerticalBar, .jspTrack {
+    background-color: transparent;
+}
+
+.jspDrag {
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 12px;
+    margin: 0 2px;
+    background-color: rgba(255,255,255,0.4);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-image: url('/_layouts/15/images/InSite/scroll_thumb_nor.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.jspTrack .jspHover, jspArrow:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.jspTrack .jspActive {
+    background-color: rgba(255,255,255,1);
+    background-image: url('/_layouts/15/images/InSite/scroll_thumb_down.png');
+}
+/*end custom Vertical scroll*/
+
+.apps-img-white-showMore {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url('/_layouts/15/images/InSite/Icon.png');
+    background-position: -29px -29px;
+    background-repeat: no-repeat;
+}
+
+.apps-nav-setting-nor {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url('/_layouts/15/images/InSite/Icon.png');
+    background-repeat: no-repeat;
+    background-position: -141px -1px;
+}
+
+.apps-nav-setting-close {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url('/_layouts/15/images/InSite/Icon.png');
+    background-repeat: no-repeat;
+    background-position: -169px -1px;
+}
+
+.apps-img-down {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url(/_layouts/15/images/InSite/Icon.png);
+    background-position: -29px -29px;
+    background-repeat: no-repeat;
+}
+@media all and (orientation:landscape){
+	.turnDeviceNotification{
+        
+	    display: none;
+	}
+}
+@media all and (orientation:portrait){
+	.turnDeviceNotification{
+        z-index:988523423423423423423422;
+		background-color:red; 
+		width:100%;
+		height: 100%;
+		position: fixed;
+		display: block;
+	}
+}

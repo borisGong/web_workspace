@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+   <style type="text/css">
+      #out{
+        background-color: yellow;
+        border: 1px solid red;
+        width:200px;
+        height: 200px;
+        padding: 0px;
+      }
+
+      #out:hover{
+        background-color: black;
+      }
+      #out:hover #inner{
+        background-color: red;
+      }
+      #inner{
+        background-color:orange;
+        border:1px solid green;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px
+      }
+   </style>
+</head>
+<body>  
+  <div id="out">
+    <div id="inner">sdfsdf</div>
+  </div>
+</body>
+</html>

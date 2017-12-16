@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #content {
+            margin-top: 100px;
+        }
+
+        #content a {
+            text-decoration: none;
+            font-size: 2.25em;
+            background-color: #b01c20;
+            color: white;
+            border-radius: 8px;
+            padding: 30px;
+            background: linear-gradient(90deg, #b01c20 0%, #f15c60 100%);
+            margin-top: 30px;
+            box-shadow: 5px 5px 5px hsla(0, 0%, 26.6667%, 0.8);
+            text-shadow: 0px 4px black;
+            border: 1px solid #bfbfbf;
+
+            transition: all 1s ease 0s;
+        }
+
+        #content a span {
+            font-size: 1.3em;
+        }
+
+        #content a:hover {
+            border: 1px solid #000000;
+            color: #000000;
+            text-shadow: 0px 1px white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>阴影和移动</h1>
+    <div id="content"><a href="">THESE SHOULD HAVE WON <span>&raquo;</span></a></div>
+    <h1>2D 效果</h1>
+
+
+    <style>
+        .Qcontainer {
+            height: 100%;
+            width: 28%;
+            position: relative;
+            -webkit-perspective: 800;
+            float: left;
+            margin-right: 2%;
+        }
+
+        .film {
+            width: 100%;
+            height: 15em;
+            -webkit-transform-style: preserve-3d;
+            -webkit-transition: 1s;
+        }
+
+        .Qcontainer:hover .film {
+            -webkit-transform: rotateY(180deg);
+        }
+
+        .face {
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+        }
+
+        .back {
+            width: 66%;
+            height: 100%;
+            -webkit-transform: rotateY(180deg);
+            background: #3b3b3b;
+            background: -webkit-repeating-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+            padding: 15%;
+        }
+
+        @keyframes warning{
+            0%{
+                text-shadow: 0px 0px 4px #000000;
+            }
+            50%{
+                text-shadow: 0 0 20px #000000;
+            }
+            100%{
+                text-shadow: 0px 0px 4px #000000;
+            }
+        }
+
+        .back h5{
+            font-size: 4em;
+            color:#f2050b;
+            text-align: center;
+            animation: warning 1.5s infinite ease-in;
+        }
+
+    </style>
+    <h1>3D 效果</h1>
+    <section class="Qcontainer">
+        <div class="film">
+            <div class="face front">
+                <img src="..\Image\Post.png" alt="The Goonies">
+            </div>
+            <div class="face back">
+                <h5>HOT!</h5>
+            </div>
+        </div>
+    </section> 
+</body>
+
+</html>

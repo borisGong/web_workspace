@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+</head>
+<body>  
+   <script type="text/javascript">
+    function HightLightSeting() {
+      this.option = { "value": "", "hightPart": "", "hightPartstyle": { color: "red", cursor: "default" } };;
+      if (typeof (this.setHightLightForValue) != "function") {
+          HightLightSeting.prototype.setHightLightForValue = function () {
+              var temp = $(this)[0].option;
+              var hightPartContext = document.createElement('span')
+              hightPartContext.style.color = temp.hightPartstyle.color;
+              hightPartContext.style.cursor = temp.hightPartstyle.cursor;
+              if ($(this)[0].privateisContainStarSpeChar(temp.hightPart)) {
+                  hightPartContext.textContent = temp.value;
+                  return hightPartContext.outerHTML;
+              } else {
+                  temp.hightPart = $(this)[0].privatefilterSpeChar(temp.hightPart);
+                  var pattern = new RegExp(temp.hightPart, "ig");
+                  var matchResult = temp.value.replace(pattern, function (matchStr, matchPosition, valueSelf) {
+                      hightPartContext.textContent = matchStr;
+                      return hightPartContext.outerHTML;
+                  });
+                  return matchResult;
+              }
+          }
+      }
+      if (typeof (this.privatefilterSpeChar) != "function") {
+          HightLightSeting.prototype.privatefilterSpeChar = function (UntreatedChar) {
+              var matchResult = UntreatedChar;
+              if (typeof (matchResult) != 'undefined') {
+                  var pattern = new RegExp("\\$|\\(|\\)|\\+|\\[|\\]|\\?|\\^|\\^|\\\\|\\{|\\}|\\|", "g");
+                  if (pattern.test(UntreatedChar)) {
+                      matchResult = matchResult
+                      .replace(
+                          pattern,
+                          function (matchStr, matchPosition, valueSelf) {
+                              return "\\" + matchStr;
+                          }
+                      );
+                  }
+              }
+              return matchResult;
+          }
+      }
+      if (typeof (this.privateisContainStarSpeChar) != "function") {
+          HightLightSeting.prototype.privateisContainStarSpeChar = function (UntreatedChar) {
+              var regS = new RegExp("\\*", "g");
+              return regS.test(UntreatedChar);
+          }
+      }
+    }
+   </script>
+</body>
+</html>

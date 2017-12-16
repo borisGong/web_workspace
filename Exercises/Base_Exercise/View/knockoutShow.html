@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="knockout-2.2.0.js"></script>
+    <style type="text/css">
+        *{
+            background-color: #D4E9AE;
+        }
+        div{
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid #66D9EF
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>FirstName:<span data-bind="text: FirstName"></span></div>
+        <div>LastName:<span data-bind="text: LastName"></span></div>
+        <div>PersonName:<span data-bind="text: personName"></span></div>
+        <div>FullName:<span data-bind="text: fullName"></span></div>
+    </div>
+    
+    <div>
+    	<input type="button" value="change view`s FirstName value" onclick="ChangeFirstName()">
+    	<input type="button" value="change view`s LastName value" onclick="ChangeLastName()">
+        <input type="button" value="change view`s PersonName value" onclick="ChangePersonName()">
+        <input type="button" value="subscrible view`s PersonName value" onclick="SubscriblePersonName()">
+        <input type="button" value="get view`s FullName value" onclick="GetFullName()">
+    <div>
+
+    <script type="text/javascript">
+
+    	function ChangeFirstName()
+    	{
+             //监控属性的写入
+            myViewModel.personName('gongC');
+    	}
+    	function ChangeLastName()
+    	{
+             //监控属性的写入
+            myViewModel.personName('BorisC');
+    	}
+        function ChangePersonName()
+        {
+            //监控属性的写入
+            myViewModel.personName('Mary');
+        }
+        //当监控属性的值改变的时候触发该方法
+        function SubscriblePersonName()
+        {
+            myViewModel.personName.subscribe(function (newValue) {
+                alert("The person's new name is " + newValue);
+            });
+        }
+        //这个方法没有成功
+        function GetFullName()
+        {
+            myViewModel.fullName = ko.dependentObservable(function () {
+                return this.FirstName() + " " + this.LastName();
+            }, myViewModel);
+        }
+    	//创建一个view model，只需要声明任意的JavaScript object
+        var myViewModel = {
+        	//view model改变的时候能自动更新你的界面:你需要将你的model属性声明成observable的, 因为它是非常特殊的JavaScript objects，能够通知订阅者它的改变以及自动探测到相关的依赖
+		    personName: ko.observable('Bob'),
+		    FirstName: ko.observable("gong"),
+		    LastName: ko.observable("Boris"),
+		    //创建一个简单的view model并且通过binding显示它的属性了
+		    personAge: 123,
+		};
+		//激活Knockout:
+		//这个代码块放在HTML底部，或者放在jQuery的$函数或者ready 函数里，然后放在页面上面
+		//方法两个参数：
+		//1.第一个参数是你想用于声明式绑定
+		//2.第二个参数（可选），可以声明成使用data-bind的HTML元素或者容器,例如， ko.applyBindings(myViewModel, document.getElementById('someElementId'))。
+		ko.applyBindings(myViewModel);
+    </script>
+</body>
+</html>

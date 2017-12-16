@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+     $(function(){
+     	    alert(undefined===cc);
+     		var exp;//不打开方法执行不下去
+     		if(!exp)
+     		{
+     			alert("cc");
+     		}
+     		bb();
+     		dd();
+        })
+     function aa(){
+     	if (typeof(exp)!=undefined)
+			{
+			    var exp; 
+			    alert(exp); //undefined 
+			    alert(typeof(exp)); //undefined
+			    if(!exp)
+			    {
+			    	exp = null; 
+			    	alert(exp); //null
+			    	alert(typeof(exp)); //object
+			    	if(!exp){
+			    		alert("!exp支持定义未赋予值和定义赋予null情况");
+			    	}
+			    }
+			} 
+     }
+     function bb()
+     {
+     	//这里声明了全局变量，但是必须是该方法执行了才会有该全局变量
+     	textbb = "11";
+     }
+     function dd()
+     {
+     	alert(textbb);
+     }
+    </script>
+</head>
+<body>  
+</body>
+</html>

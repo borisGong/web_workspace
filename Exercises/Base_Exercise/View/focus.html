@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <style type="text/css">
+        #myCheck+label {
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid #d3d3d3;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 20px;
+        }
+
+        #myCheck:checked+label {
+            background-color: #eee;
+        }
+
+        #myCheck:checked+label:after {
+            content: "\2714";
+        }
+    </style>
+    <script src="..\jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+    <input type="hidden" id="myCheck">
+    <label for="myCheck"></label>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    
+</head>
+<body>  
+  <div id="color" colorRole="color">
+    <div id="yellow">yellow</div>
+    <div id="red">red</div>
+    <div id="blue">blue</div>
+    <div id="green">green</div>
+  </div>
+  <div id="language">
+    <div id="chinanese"></div>
+    <div id="japanese"></div>
+    <div id="frence"></div>
+    <div id="english"></div>
+  </div>
+   <script type="text/javascript">
+   //dom0事件流
+    // var color = document.getElementById("color");
+    // color.onclick=function(){
+    //   console.log(this.id);
+    // }
+    //dom2事件流
+    var color = document.getElementById("color");
+    color.addEventListener("click",function(){
+      console.log("Event 1");
+    })
+    color.addEventListener("click",function(){
+      console.log("Event 2");
+    })
+   </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <style type="text/css">
+    /*这个例子说明left是相对border移动，忽略padding*/
+    /*    .sss{
+            padding: 0px;
+            margin: 0px;
+            border: 1px solid red;
+        }
+        .outdivcss{
+            width:1200px;
+            border:1px solid #00F;
+            height:48px;
+            padding:15px;
+            margin: 10px;
+            position: relative;
+            background-color: green;
+        }
+        .innerdivcss{
+            width: 1200px;
+            border: 1px solid red;
+            position:absolute;
+            left: 200px;
+        }
+*/
+    </style>
+</head>
+<body style="background: yellow;font-size:100px"> 
+    <!-- <div class="sss">
+        <div class="outdivcss" >
+            <div class="innerdivcss"></div>
+        </div> 
+    </div> -->
+
+    <!-- 默认是相对Body
+    <div style="background: #fff;">
+        A
+        <div style="background: #81b6ff">
+            A - 1
+            <div style="background: #b6ff00;position: absolute; top: 0; left: 0;">
+                A - 2
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 寻找最近的relative
+    <div style="background: #fff;position: relative;">
+        A
+        <div style="background: #81b6ff">
+            A - 1
+            <div style="background: #b6ff00;position: absolute; top: 0; left: 0;">
+                A - 2
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #fff">
+        A
+        <div style="background: #81b6ff;position: relative;">
+            A - 1
+            <div style="background: #b6ff00;position: absolute; top: 0; left: 0;">
+                A - 2
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 最外层设置relative中间层absolute内层absolute,那么内层相对中间层定位
+    <div style="background: #fff;position: relative;">
+        A
+        <div style="background: #81b6ff;position: absolute;">
+            A - 1
+            <div style="background: #b6ff00;position: absolute; top: 0; left: 0;">
+                A - 2
+            </div>
+        </div>
+    </div> -->
+
+    <!-- absolute会脱离普通流，会将width从100%转换成auto
+    <div style="background: #fff;position: absolute;border:1px solid red">
+        A
+        <div style="background: #81b6ff">
+            A - 1
+            <div style="background: #b6ff00;position: absolute; top: 0; left: 0;">
+                A - 2
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 如果设置absolute，div已经脱离文档流，没有设置top等会在原位置，但是脱离原文档流的位置
+    <div style="background: #fff;">
+        A
+        <div style="background: #81b6ff;position: absolute;border:1px solid red">
+            A - 1
+            <div style="background: #b6ff00;position: absolute; top: 0; left: 0;">
+                A - 2
+            </div>
+        </div>
+        <div>被覆盖了</div>
+    </div> -->
+
+    <!-- 脱离文档流，最外层可以任意设置，但都是相对body
+    <div style="background: #fff;position: absolute">
+        A
+        <div style="background: #81b6ff;position: absolute;top:200px;left:200px">
+            A - 1
+            <div style="background: #b6ff00;position: absolute">
+                A - 2
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #fff;position: absolute">
+        A
+        <div style="background: #81b6ff;position: absolute;top:200px;left:200px">
+            A - 1
+            <div style="background: #b6ff00;position: absolute;top:400px;left:400px">
+                A - 2
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 行内元素使用position:absolute会改变display属性
+    <span style="background: #fff;position:absolute;">
+        <span style="background: #81b6ff; ">
+           A
+        </span>
+        <span style="background: #b6ff00; ">
+            B
+        </span>
+        <span style="background: #fff; ">
+            C
+        </span>
+    </span>  
+
+    float和relative同时使用，就是先浮动，然后在top等
+    <div style="background: #fff">
+        <div style="background: #81b6ff; ">
+           A
+        </div>
+        <div style="background: #b6ff00;position:relative; float:left; left:50px; top:50px; ">
+            B
+        </div>
+        <div style="background: #fff; ">
+            C
+        </div>
+    </div>   -->
+
+    <!-- absolute 和 float同时使用 float作废
+    <div style="background: #fff">
+        <div style="background: #81b6ff; ">
+           A
+        </div>
+        <div style="background: #b6ff00;position:absolute; float: right;">
+            B
+        </div>
+        <div style="background: #fff; ">
+            C
+        </div>
+    </div>  --> 
+
+
+    <!-- 第一个元素应用了position之后会覆盖着接下来的float元素（如果两个元素所处的位置相同）
+    <div style="background: #fff">
+        <div style="height:500px;background: #b6ff00;position: absolute; left:10px; top: 10px;">
+            B
+        </div>
+        <div style="height:500px;background: #fff; float:left; ">
+            C
+        </div>
+    </div>  -->
+</body>
+</html>
