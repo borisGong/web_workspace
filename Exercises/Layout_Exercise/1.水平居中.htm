@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        xmp {
+            background-color: aliceblue
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <h2>使用margin:0 auto实现</h2>
+            <div>
+                <div style="background-color:beige;">
+                    <div style="width:200px;
+                                margin:0 auto;
+                                background-color:antiquewhite">块水平居中</div>
+                </div>
+            </div>
+            <xmp>
+.child{ width:200px; margin:0 auto; }
+            </xmp>
+            <div><i>优点：兼容性好 缺点: 需要指定宽度</i></div>
+        </li>
+        <li>
+            <h2>使用inline-block 和 text-align实现</h2>
+            <div>
+                <div style="text-align:center;
+                            background-color:beige;">
+                    <div style="display:inline-block;
+                                width:200px;
+                                background-color:antiquewhite">块水平居中</div>
+                </div>
+            </div>
+            <xmp>
+.parent{ text-align: center; } 
+.child{ display: inline-block; }
+            </xmp>
+            <div><i>优点：兼容性好； 不足：需要同时设置子元素和父元素</i></div>
+        </li>
+        <li>
+            <h2>使用table实现</h2>
+            <div>
+                <div style="background-color:beige;">
+                    <div style="display:table;
+                                margin:0 auto;
+                                background-color:antiquewhite">块水平居中</div>
+                </div>
+            </div>
+            <xmp>
+.child{ display:table; margin:0 auto; }
+            </xmp>
+            <div><i>优点:只需要对自身进行设置 不足:IE6,7需要调整结构</i></div>
+        </li>
+        <li>
+            <h2>使用绝对定位实现</h2>
+            <div>
+                <div style="position:relative;background-color:beige;">
+                    <div style="position:absolute;left:50%;transform:translate(-50%);background-color:antiquewhite">块水平居中</div>
+                </div>
+            </div>
+            <xmp>
+.parent{ position:relative; }
+.child{ position:absolute; left:50%; transform:translate(-50%); } 
+/*或者实用margin-left的负值为盒子宽度的一半也可以实现，不过这样就必须知道盒子的宽度，但兼容性好*/
+            </xmp>
+            <div><i>不足：兼容性差,IE9及以上可用</i></div>
+        </li>
+        <li>
+            <h2>使用flex实现</h2>
+            <div>
+                <div style="display:flex;
+                            justify-content:center;
+                            background-color:beige;">
+                    <div style="background-color:antiquewhite">块水平居中</div>
+                </div>
+            </div>
+            <xmp>
+.parent{ display:flex; justify-content:center; }
+            </xmp>
+            <div><i>缺点：兼容性差，如果进行大面积的布局可能会影响效率</i></div>
+        </li>
+        <li>
+            <h2>使用flex实现</h2>
+            <div>
+                <div style="display:flex;
+                            background-color:beige;">
+                    <div style="margin:0 auto;
+                                background-color:antiquewhite">块水平居中</div>
+                </div>
+            </div>
+            <xmp>
+.parent{ display:flex; }
+.child{ margin:0 auto; }
+            </xmp>
+            <div><i>缺点：兼容性差，如果进行大面积的布局可能会影响效率</i></div>
+        </li>
+    </ul>
+</body>
+
+</html>

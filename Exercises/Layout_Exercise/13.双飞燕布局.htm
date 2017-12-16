@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .left{
+        width:200px;
+        background-color:darkcyan;
+        margin-left: -100%;
+        height: 200px;
+    }
+    .main-container{
+        margin-left: 200px;
+        margin-right: 200px;
+        text-align: center;
+        background-color:bisque;
+        height: 200px;
+    }
+    .right{
+        width:200px;
+        background-color: aquamarine;
+        margin-left: -200px;
+        height: 200px;
+    }
+    .main,.left,.right{
+        float: left;  
+    }
+    .main{
+        width:100%;
+        background-color:coral;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="main-container">
+            margin负值导致两个翅膀是覆盖在div.main上,我们看到的蓝色部分是.main-container,margin-left:-100%,相当于是把第二排的第一个，从后面拉动一个100%距离，也就是到了第一排和第一排第一个一起站着，第二排第一个走了，第二排第二个（也就是div.right）自动补到他的位置上，这时候又来了个margin-left：-200px利用到第二排第二个上，往前拉动200px的距离，于是就到了现在div.right的位置
+        </div>
+    </div>
+    <div class="left">左边小翅膀</div>
+    <div class="right">右边小翅膀</div>
+    <div><i><a href="https://segmentfault.com/a/1190000005155084">参考链接</a></i></div>
+</body>
+</html>
