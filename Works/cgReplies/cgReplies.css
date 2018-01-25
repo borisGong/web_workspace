@@ -1,0 +1,129 @@
+.cc-gc-Panel {
+    width: 1032px;
+    margin: 0 auto ;
+    font-family: "Segoe UI";
+}
+.cc-gc-editor-panel{
+    margin: 10px 0;
+}
+.cc-gc-editor {
+    padding: 10px 14px 10px 14px;
+    border: 1px solid black;
+    font-size: 13px;
+    height:50px;
+}
+.cc-gc-row {
+    overflow: hidden;
+}
+.cc-gc-btn-post {
+    float: right;
+    width:123px;
+    height:40px;
+    margin-top: 10px;
+    background-color:rgba(30, 93, 158, 1);
+    border-radius:5px;
+    color:white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+.cc-gc-reply-count {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cc-gc-reply-panel {
+    padding: 0 14px;
+    border: 1px solid #bcbcbc;
+    margin-bottom: 10px;
+}
+.cc-gc-page{
+    height: 50px;
+}
+.cc-gc-creat-info {
+    float: left;
+}
+.cc-gc-reply-level1 {
+    padding-top: 15px;
+}
+.cc-gc-reply-level2 {
+    padding-left: 50px;
+}
+.cc-gc-reply-level3 {
+    padding-top: 5px;
+    padding-left: 50px;
+}
+.cc-gc-reply-level4{
+    padding-left: 50px;
+}
+.cc-gc-header {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.cc-gc-creat-info >div{
+    display: inline-block;
+}
+.cc-gc-creater {
+    font-weight:bold;
+    font-size: 14px;
+}
+.cc-gc-createTime {
+    font-size: 13px;
+}
+.cc-gc-btn-parentReply{
+    font-weight: bold;
+    margin-left: 5px;
+}
+.cc-gc-toolBar {
+    float: right;
+}
+.cc-gc-toolBar >div{
+    display: inline-block;
+    width: 37px;
+    height: 20px;
+    line-height: 20px;
+    border-left: 1px solid black;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.cc-gc-btn-like{
+    background-image: url("like.png");
+    background-position: 2px ;
+    border-left-width: 0!important;
+    padding-left: 30px;
+    background-repeat:no-repeat;
+    width: 50px!important;
+}
+.cc-gc-like-count{
+    padding-right: 5px;
+}
+.cc-gc-btn-reply {
+    background-image: url("replay.png");
+    background-position: 2px ;
+}
+.cc-gc-btn-edit {
+    background-image: url("edit.png");
+    background-position: 2px;
+}
+.cc-gc-btn-del {
+    background-image: url("del.png");
+    background-position: 2px;
+}
+.cc-gc-content {
+    font-size:13px;
+    word-wrap: break-word;
+}
+.cc-gc-footer {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    color:#bcbcbc;
+}
+.cc-cg-modifier-infor > div{
+    display: inline-block;
+    font-size: 14px;
+}
+
+

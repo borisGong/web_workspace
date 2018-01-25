@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body,
+    html {
+      height: 100%;
+      font: 20px/40px"microsoft yahei";
+      color: black;
+    }
+
+    #container {
+      width: 100%;
+      margin: 0 auto;
+      height: 100%;
+    }
+
+    #header,
+    #footer {
+      height: 12.5%;
+      width: 100%;
+      background: deeppink;
+    }
+
+    #main {
+      height: 75%;
+    }
+
+    #center,
+    #left,
+    #right {
+      height: 100%;
+      float: left;
+    }
+
+    #center {
+      width: 100%;
+      /*这里center已经占满了中间这一栏 left right都是在它的上面*/
+      background: #1fc195;
+    }
+
+    #left {
+      background: lightgrey;
+      width: 15%;
+      margin-left: -100%;
+      /*向左偏移自己的100% 回到上一行的开头*/
+    }
+
+    #right {
+      background: #2e6da4;
+      width: 15%;
+      margin-left: -15%;
+      /*向左偏移自己本身的长度   回到了上一行的末尾*/
+    }
+
+    #main-inner {
+      padding-left: 15%;
+      /*回到自己的开头*/
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      header
+    </div>
+    <div id="main">
+      <div id="center">
+        <div id="main-inner">
+          center
+        </div>
+      </div>
+      <div id="left">
+        left
+      </div>
+      <div id="right">
+        right
+      </div>
+    </div>
+    <div id="footer">
+      footer
+    </div>
+  </div>
+</body>
+
+</html>

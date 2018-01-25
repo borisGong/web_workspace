@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .Center-Container {
+            text-align: center;
+            overflow: auto;
+
+            /* 这两个属性是为了看出效果 */
+            background-color: aquamarine;
+            height: 300px;
+        }
+
+        .Center-Container:after {
+            display: inline-block;
+            content: '';
+            height: 100%;
+            margin-left: -0.25em;
+            /* To offset spacing. May vary by font */
+        }
+
+        .Center-Block {
+            display: inline-block;
+            max-width: 99%;
+            /* Prevents issues with long content causes the content block to be pushed to the top */
+            /* max-width: calc(100% - 0.25em) /* Only for IE9+ */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Center-Container">
+        <div class="Center-Block">
+            Prevents issues with long content causes the content block to be pushe
+        </div>
+    </div>
+    <pre>
+         
+    </pre>
+</body>
+
+</html>

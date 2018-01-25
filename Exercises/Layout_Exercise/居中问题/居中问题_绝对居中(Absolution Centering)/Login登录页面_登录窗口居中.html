@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            /* 如果不设置100% ，container是不能铺满全部的哈 */
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0px;
+            /* margin:0 是为了防止内部#container设置width和height为100%的时候出现滚动条 */
+        }
+
+        #container {
+            height: 100%;
+            background-color: #0cf;
+        }
+
+        #login {
+            /* 固定宽高，这个宽度可以设置撑百分比的 ，例如 	width: 50%;height: 50%;*/
+            width: 300px;
+            height: 300px;
+            /* 没用Fix定位是为了防止zoom放大的时候，登录框屏幕盖住 */
+            position: absolute;
+            /* 居中 5中设置缺一不可*/
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            /* other */
+            background-color: #b41b56;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="login"></div>
+    </div>
+</body>
+
+</html>

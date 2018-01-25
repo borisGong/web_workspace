@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>p1</title>
+    <style type="text/css">
+        .item {
+            float: left;
+            min-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>相册</h2>
+    <div id="items">
+        <p class="item">
+            <img src="img/1.jpg" />
+        </p>
+        <p class="item">
+            <img src="img/2.jpg" />
+        </p>
+        <p class="item">
+            <img src="img/3.jpg" />
+        </p>
+        <p class="item">
+            <img src="img/4.jpg" />
+        </p>
+        <p class="item">
+            <img src="img/5.jpg" />
+        </p>
+        <p class="item">
+            <img src="img/6.jpg" />
+        </p>
+    </div>
+    https://www.cnblogs.com/zhangyongl/p/6123522.html
+    <a href="m2.json" id="next"></a>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="infinite-scroll.pkgd.min.js"></script>
+
+    
+    <script type="text/javascript">
+        $('#items').infinitescroll({
+            navSelector: "#next",
+            nextSelector: "a#next",
+            itemSelector: ".item",
+            debug: true,
+            dataType: 'json',
+            maxPage: 3,
+            appendCallback: false,
+            path: function (index) {
+                return "m" + index + ".json";
+            }
+        }, function (data) {
+
+            for (var i = 0; i < data.length; i++) {
+                $("<p class='item'><img src='img/" + data[i] + ".jpg' /></p>").appendTo("#items");
+            }
+
+        });
+    </script>
+</body>
+
+</html>

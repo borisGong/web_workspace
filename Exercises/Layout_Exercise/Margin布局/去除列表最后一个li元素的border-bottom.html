@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #news {
+            width: 200px;
+            border: 2px solid lightblue;
+            margin: 20px 0 0 20px;
+            font-family: 'Heiti SC', 'Microsoft YaHei';
+            color: brown;
+        }
+
+        #news li {
+            height: 26px;
+            line-height: 26px;
+            border-bottom: 1px dashed lightblue;
+        }
+
+        .lastLi {
+            margin-bottom: -1px;
+            /*意思是向上移回1px 跟框框重合了*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="news">
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+            <li>Item D</li>
+            <li class="lastLi">Item E</li>
+        </ul>
+    </div>
+</body>
+
+</html>

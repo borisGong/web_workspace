@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" style="width:400px;">
+    <script src="../jquery-1.10.2.min.js"></script>
+    <script>
+        $('input[type=text]').on('paste', function (e) {
+            var clipboardData = event.clipboardData || window.clipboardData;
+            var pastedData = clipboardData.getData('Text'); 
+            $(this).val(pastedData.replace(/(\r\n|\n|\r)/gm, " ")); 
+            console.log("paster");
+        });
+        $('input[type=text]').on('keyup', function (e) {
+            console.log("keyup");
+        });
+    </script>
+</body>
+</html>

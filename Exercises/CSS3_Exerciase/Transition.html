@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .main {
+            position: relative;
+            margin: 0 auto;
+            height: 45px;
+            width: 300px;
+            background-color: lightgray;
+            transition: background-color .6s ease-in 0s;
+        }
+
+        .main:hover {
+            background-color: dimgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main"></div>
+
+    <pre>
+            Transition 对象变换时的过渡效果
+
+            transition-property 对象参与过渡的属性
+            transition-duration 过渡的持续时间
+            transition-timing-function 过渡的类型
+            transition-delay 延迟过渡的时间
+            缩写方式：　　
+            
+            [css] view plain copy
+            transition:border-color .5s ease-in .1s, background-color .5s ease-in .1s, color .5s ease-in .1s;  
+            拆分方式：
+            
+            
+            [css] view plain copy
+            transition-property:border-color, background-color, color;  
+            transition-duration:.5s, .5s, .5s;  
+            transition-timing-function:ease-in, ease-in, ease-in;  
+            transition-delay:.1s, .1s, .1s;  
+    </pre>
+</body>
+
+</html>

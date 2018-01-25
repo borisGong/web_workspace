@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+</head>
+<body>  
+  <div id="color">
+    <div id="yellow"></div>
+    <div id="red"></div>
+    <div id="blue"></div>
+    <div id="green"></div>
+  </div>
+  <div id="language">
+    <div id="chinanese"></div>
+    <div id="japanese"></div>
+    <div id="frence"></div>
+    <div id="english"></div>
+  </div>
+   <script type="text/javascript">
+   $(function(){
+      var patern = new RegExp("Micro","ig");
+      var str="Visit Microsoft!asfasfMicrofasfdasfdsaMicrofsafawefMicroasfasdfMicrosfasfdMicro"
+      var dd = str.replace(patern, function(param,str,ter){
+          return "<span style='color:red'>"+param+"</span>";
+        });
+      document.write(dd);
+   });
+    
+   </script>
+</body>
+</html>

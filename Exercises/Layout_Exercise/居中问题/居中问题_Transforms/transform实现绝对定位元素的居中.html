@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        #Center-Container {
+            width: 600px;
+            height: 600px;
+
+            position: relative;
+
+            background-color: brown;
+        }
+
+        #Absolute-Center {
+            /* 宽高是必须设定的，因为margin-top和margin-left是根据宽高设定的 */
+            width: 300px;
+            height: 300px;
+
+            position: absolute;
+
+            /* transform中translate偏移的百分比值是相对于自身大小的 */
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Center-Container">
+        <div id="Absolute-Center">sdf</div>
+    </div>
+    <pre>   
+            这是最简单的方法，不近能实现绝对居中同样的效果，也支持联合可变高度方式使用。内容块定义transform: translate(-50%,-50%)必须带上浏览器厂商的前缀，还要加上
+            top: 50%; left: 50%;
+
+            优点：
+                1.内容可变高度
+                2.代码量少
+                缺点：
+                1.IE8不支持
+                2.属性需要写浏览器厂商前缀
+                3.可能干扰其他transform效果
+                4.某些情形下会出现文本或元素边界渲染模糊的现象
+                进一步了解transform实现居中的知识可以参考CSS-Tricks的文章《Centering PercentageWidth/Height Elements》
+    </pre>
+</body>
+
+</html>

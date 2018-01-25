@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .Center-Container.is-Table {
+            display: table;
+            width:500px;
+            height: 500px;
+            background-color: aqua;
+        }
+
+        .is-Table .Table-Cell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .is-Table .Center-Block {
+            width: 50%;
+            height: 100px;
+            margin: 0 auto;
+
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Center-Container is-Table">
+        <div class="Table-Cell">
+            <div class="Center-Block">
+                <!-- CONTENT -->
+            </div>
+        </div>
+    </div>
+    <pre>
+        总的说来这可能是最好的居中实现方法，因为内容块高度会随着实际内容的高度变化，浏览器对此的兼容性也好。最大的缺点是需要大量额外的标记，需要三层元素让最内层的元素居中。
+        
+        优点：
+            1.高度可变
+            2.内容溢出会将父元素撑开。
+            3.跨浏览器兼容性好。
+            缺点：
+            需要额外html标记
+            了解更多表格单元格实现居中的知识，请参考Roger Johansson发表在456bereastreet的文章《Flexibleheight vertical centering with CSS, beyond IE7》
+    </pre>
+</body>
+
+</html>

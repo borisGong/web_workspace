@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+   
+   <style type="text/css">
+   		body{
+   			margin: 0px;
+   			padding: 0px;
+   			color: white;
+        font-size: 100%;
+        text-align:center;
+   		}
+   		#outter{
+   			background-color: rgba(231,76,60,0.5);
+   			z-index: 1000000;
+   			position: relative;
+   			display: none;
+   		}
+   		#inner{
+        text-align:center;
+        z-index: 1000000;
+   			background-color: #E74C3C;
+   			position: absolute;
+   			top:5%;
+   			left: 20%;
+   			right: 20%;
+   			bottom:95%;
+        min-width: 700px;
+        min-height: 400px;
+   		}
+      #context{
+        margin: 0px auto;
+        z-index: 1000000;
+        width: 700px;
+        height: 400px;
+        overflow: hidden;
+        position: absolute;
+        left:50%;
+        margin-left:-350px; 
+      }
+   </style>
+</head>
+<body>  
+  <div id="outter">
+  	<div id="inner">
+      <div id="context">
+        This is a modal window. You can do the following things with it:Read: modal windows will"
+          "This is a modal window. You can do the following things with it:Read: modal windows will"
+          "This is a modal window. You can do the following things with it:Read: modal windows will" "This is a modal window. You can do the following things with it:Read: modal windows will"+      "This is a modal window. You can do the following things with it:Read: modal windows will"+"This is a modal window. You can do the following things with it:Read: modal windows will"+ "This is a modal window. You can do the following things with it:Read: modal windows will"+
+          "This is a modal window. You can do the following things with it:Read: modal windows will"+ "This is a modal window. You can do the following things with it:Read: modal windows will"+  "This is a modal window. You can do the following things with it:Read: modal windows will"+ "This is a modal window. You can do the following things with it:Read: modal windows will"+  "This is a modal window. You can do the following things with it:Read: modal windows will"+       "This is a modal window. You can do the following things with it:Read: modal windows will"+       "This is a modal window. You can do the following things with it:Read: modal windows will"+"This is a modal window. You can do the following things with 
+      </div>
+  	</div>
+  </div>
+  <input type="button" id="button" value="poll up"/>
+  <script type="text/javascript">
+  		$("#outter").css("width",$(window).width());
+  		$("#outter").css("height",$(window).height());
+   		$("#button").click(function() {
+		  	$("#outter").fadeIn(300);
+        $("#inner")
+          .animate({
+            top:"30%",
+            left:"30%",
+            right:"30%",
+            bottom:"30%",
+            padding:"50px"
+        },500);
+
+		});
+   </script>
+</body>
+</html>

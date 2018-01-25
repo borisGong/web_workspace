@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
+   <style type="text/css">
+      #yellow{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        display: inline-block;
+      }
+      #red{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+      }
+      #blue{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        display: inline-block;
+      }
+      #green{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        display: inline-block;
+      }
+      #color{
+        background-color: black;
+      }
+
+
+      #language{
+        margin-top: 10px;
+        height: 100px;
+        background-color: black;
+      }
+      #chinanese{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        display: inline-block;
+      }
+      #japanese{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        display: inline-block;
+      }
+      #frence{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+      }
+      #english{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        display: inline-block;
+      }
+   </style>
+</head>
+<body>  
+  <div id="color">
+    <div id="yellow"></div>
+    <div id="red"></div>
+    <div id="blue"></div>
+    <div id="green"></div>
+  </div>
+  <div id="language">
+    <div id="chinanese"></div>
+    <div id="japanese"></div>
+    <div id="frence"></div>
+    <div id="english"></div>
+  </div>
+   <script type="text/javascript">
+   $(function(){
+      $("#color").on("click","#yellow,#red,#blue,#green",{language:"english"},function(event){
+          console.log(event.data.language);
+          if($(this).attr("id")=="yellow"){
+            $(event.currentTarget).css("background-color","black");
+          }else if($(this).attr("id")=="red"){
+            $(event.currentTarget).css("background-color","black");
+          }else if($(this).attr("id")=="blue"){
+            $(event.currentTarget).css("background-color","black");
+          }else if($(this).attr("id")=="green"){
+            $(event.currentTarget).css("background-color","black");
+          }
+      });
+      $("#chinanese").on({
+          click:function(event){
+            $(this).css("background-color",$(this).next().css("background-color"));
+            if(!event.isPropagationStopped()){
+                event.stopPropagation();
+            }
+          },
+          mouseenter:function(event){
+            $(this).css("background-color",$(this).next().next().css("background-color"));
+            if(!event.isPropagationStopped()){
+                event.stopPropagation();
+            }
+          }
+      });
+      $("#language").click(function(){
+          alert("not control bubble");
+      })
+   })
+    
+   </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .main {
+            position: absolute;
+            left: 10px;
+            top: 200px;
+            height: 45px;
+            width: 300px;
+            background-color: cadetblue;
+        }
+
+        .main:hover {
+            animation: animations 2s ease 0s;
+        }
+
+        @keyframes animations {
+            0% {
+                left: 10px;
+                opacity: 1;
+            }
+            50%,
+            70% {
+                left: 50%;
+                opacity: .7;
+                margin-left: -150px;
+            }
+            100% {
+                left: 100%;
+                opacity: 0;
+                margin-left: -300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main"></div>
+</body>
+
+</html>

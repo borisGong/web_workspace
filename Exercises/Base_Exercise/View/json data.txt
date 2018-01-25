@@ -1,0 +1,460 @@
+    var data = 
+   {
+    "HomeMenu": {
+        "Link": "http://portalproject:13453/sites/Insite",
+        "NormalIcon": "/_layouts/15/images/InSite/home_16x16.png",
+        "Tip": "Go To Home Page"
+    },
+    "Menus": [
+        {
+            "Link": null,
+            "Menus": [
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-53,-313",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Compliance",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-53,-261",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-521,-417",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Rules and Regulations",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-521,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-105,-521",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/SubsidiaryInfo.aspx",
+                    "Menus": null,
+                    "Name": "Subsidiary Info",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-105,-469",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-105,-157",
+                    "Link": "https://one.inpexcorp.com/_layouts/15/EPortal/pages/OurVersion.aspx",
+                    "Menus": null,
+                    "Name": "Medium- to Long-term Vision",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-105,-105",
+                    "OpenInNewTab": true
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-157,-157",
+                    "Link": "https://one.inpexcorp.com/_layouts/15/EPortal/pages/INPEXValue.aspx",
+                    "Menus": null,
+                    "Name": "INPEX Value",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-157,-105",
+                    "OpenInNewTab": true
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-157,-313",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "CSR",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-157,-261",
+                    "OpenInNewTab": false
+                }
+            ],
+            "Name": "Basic Info"
+        },
+        {
+            "Link": null,
+            "Menus": [
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-157,-53",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/NewsOverview.aspx?key=9f625bb0-ec91-40b4-9b83-2ab1452991e9",
+                    "Menus": null,
+                    "Name": "Company Wide Bulletin",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-157,-1",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-209,-313",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/NewsOverview.aspx?key=060e7616-a06e-4783-8bcf-b04e3fc6665e",
+                    "Menus": null,
+                    "Name": "Local Info",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-209,-261",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-313,-313",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/NewsOverview.aspx?key=9f625bb0-ec91-40b4-9b83-2ab1452991e9&mr=true",
+                    "Menus": null,
+                    "Name": "Must Reads",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-313,-261",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-365,-313",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/NewsOverview.aspx?key=8cfc866c-6fa5-4e7a-89f6-89a4b4dfd807",
+                    "Menus": null,
+                    "Name": "Posts with Due Dates",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-365,-261",
+                    "OpenInNewTab": false
+                }
+            ],
+            "Name": "Bulletin"
+        },
+        {
+            "Link": null,
+            "Menus": [
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-313,-53",
+                    "Link": "http://web.tokyo.local/hseweb/en/",
+                    "Menus": null,
+                    "Name": "HSE Web",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-313,-1",
+                    "OpenInNewTab": true
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-469,-313",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "HR Navi",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-469,-261",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-521,-313",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "IT-Web",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-521,-261",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-573,-313",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Compliance Committee",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-573,-261",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-625,-313",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Information Security",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-625,-261",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-677,-313",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "TechInfo",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-677,-261",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-625,-53",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/LinkListPage.aspx?tabName=others",
+                    "Menus": null,
+                    "Name": "Link List",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-625,-1",
+                    "OpenInNewTab": false
+                }
+            ],
+            "Name": "Biz Links"
+        },
+        {
+            "Link": null,
+            "Menus": [
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-53,-521",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "IBOS EP",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-53,-469",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-1,-417",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/PeopleSearch.aspx",
+                    "Menus": null,
+                    "Name": "People Directories",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-1,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-53,-417",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Portal Docs",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-53,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-105,-417",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Millemasse",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-105,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-157,-417",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Dezie",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-157,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-209,-417",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Outlook Web App",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-209,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-365,-53",
+                    "Link": null,
+                    "Menus": [
+                        {
+                            "Link": "https://inpex.imagestore.jp/",
+                            "Menus": null,
+                            "Name": "Access Image Store",
+                            "OpenInNewTab": true
+                        },
+                        {
+                            "Link": "",
+                            "Menus": null,
+                            "Name": "Access Password",
+                            "OpenInNewTab": true
+                        }
+                    ],
+                    "Name": "Image Store",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-365,-1",
+                    "OpenInNewTab": false
+                }
+            ],
+            "Name": "Tools"
+        },
+        {
+            "Link": null,
+            "Menus": [
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-261,-417",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/ExecutiveSecretary.aspx",
+                    "Menus": null,
+                    "Name": "Executive Secretary List",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-261,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-313,-417",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/SeatingChart.aspx?module=seat",
+                    "Menus": null,
+                    "Name": "Seating Chart",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-313,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-365,-417",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/SeatingChart.aspx?module=phone",
+                    "Menus": null,
+                    "Name": "Phone Book",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-365,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-417,-417",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/SeatingChart.aspx?module=floor",
+                    "Menus": null,
+                    "Name": "Floor Guide",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-417,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-469,-417",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Templates",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-469,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-105,-313",
+                    "Link": null,
+                    "Menus": null,
+                    "Name": "Office Rule Book",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-105,-261",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-573,-417",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/LinkListPage.aspx?tabName=biztrip",
+                    "Menus": null,
+                    "Name": "Biz Trip / Travel Safety Info",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-573,-365",
+                    "OpenInNewTab": false
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-625,-417",
+                    "Link": "http://portalproject:13453/sites/Insite/_layouts/15/InSite/pages/logoANDforms.aspx",
+                    "Menus": null,
+                    "Name": "Logo and Forms",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-625,-365",
+                    "OpenInNewTab": false
+                }
+            ],
+            "Name": "Useful Info"
+        },
+        {
+            "Link": null,
+            "Menus": null,
+            "Name": "ExCom"
+        },
+        {
+            "Link": null,
+            "Menus": [
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-1,-521",
+                    "Link": "https://one.inpexcorp.com/Pages/default.aspx",
+                    "Menus": null,
+                    "Name": "INPEX One",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-1,-469",
+                    "OpenInNewTab": true
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-105,-53",
+                    "Link": " https://intouch.inpex.com.au/irj/portal/intranet/",
+                    "Menus": null,
+                    "Name": "Australia",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-105,-1",
+                    "OpenInNewTab": true
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-521,-53",
+                    "Link": "https://inpexcojp-1.sharepoint.apac.microsoftonline.com/JakartaPortal/Default.aspx",
+                    "Menus": null,
+                    "Name": "Indonesia",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-521,-1",
+                    "OpenInNewTab": true
+                },
+                {
+                    "Description": "",
+                    "HoverIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "HoverIconCoordinate": "-53,-53",
+                    "Link": "https://inpexjapan.sharepoint.com/sites/AbuDhabiPortal/SitePages/Home.aspx?FollowSite=1;SiteName=AbuDhabiPortal",
+                    "Menus": null,
+                    "Name": "UAE",
+                    "NormalIcon": "http://portalproject:13453/sites/Insite/Style%20Library/InSite/Mega%20Menu/menu.png",
+                    "NormalIconCoordinate": "-53,-1",
+                    "OpenInNewTab": true
+                }
+            ],
+            "Name": "Other Portal Sites"
+        }
+     ]
+    }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* div1和div2同时脱离文档流 */
+        #div1 {
+            height: 100px;
+            background: lightblue;
+            float: left; 
+            width: 100%; 
+        }
+
+        #div2 {
+            height: 100px;
+            background: lightgreen;
+            width: 30%;  
+            float: left;
+            /* 当负的边距超过自身的宽度将上移 */
+            margin-left: -100%;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+            当多个元素同时从标准流中脱离开来时，
+            如果前一个元素的宽度为100%宽度，后面的元素通过负边距可以实现上移。
+            当负的边距超过自身的宽度将上移，只要没有超过自身宽度就不会上移
+    </pre>
+    <div id="div1">div1
+    </div>
+    <div id="div2">div2
+    </div>
+</body>
+
+</html>

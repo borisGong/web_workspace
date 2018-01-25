@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #redemption {
+            width: 100%;
+            font-family: "ColaborateThinRegular";
+            font-weight: 400;
+        }
+
+        #redemption hgroup {
+            margin-bottom: 20px;
+        }
+
+        #redemption div {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        /* #redemption fieldset {
+            border: 1px dotted #cccccc;
+            padding: 2%;
+            margin-bottom: 20px;
+            background: #ffffff;
+            background: linear-gradient(top, #ffffff 77%, #f2f2f2 100%);
+            border-radius: 4px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 16.6667%, 0.3)
+        } */
+    </style>
+</head>
+
+<body>
+    <form id="redemption" method="post" autocomplete="off">
+        <hgroup>
+            <h1>Oscar Redemption</h1>
+            <h2>Here`s your chance to set the record straight : tell us what year the wrong film got nominate , and which film
+                <b>should</b> have received a nod ..</h2>
+        </hgroup>
+        <fieldset>
+            <legend>About the offending film (part 1 of 3)</legend>
+            <div>
+                <label for="film">The film in question?</label>
+                <input id="film" type="text" name="film" placeholder="e.g. King Kong" required aria-required="true" autofocus>
+            </div>
+        </fieldset>
+        <div>
+            <label for="awardWon">Award Won</label>
+            <input id="awardWon" name="wardWon" type="text" list="awards">
+            <datalist id="awards">
+                <select name="" id="">
+                    <option value="Best Picture"></option>
+                    <option value="Best Picture"></option>
+                    <option value="Best Adapted Screenplay"></option>
+                    <option value="Best Original Screenplay"></option>
+                </select>
+            </datalist>
+        </div>
+        <div>
+            <label for="email">Your Email address</label>
+            <input type="text" id="email" name="email" placeholder="xx@gmail.com" required aria-required="true">
+        </div>
+        <div>
+            <label for="yearOfCrime">Year Of Crime</label>
+            <input type="yearOfCrime" id="yearOfCrime" name="number" min="1929" max="2015" placeholder="xx@gmail.com" required aria-required="true">
+        </div>
+        <div>
+            <label for="web">Your Web Address</label>
+            <input type="url" id="web" name="web" placeholder="www.mysite.com">
+        </div>
+        <div>
+            <label for="tel">Telephone (so we can berate you if you`re wrong)</label>
+            <input type="tel" id="tel" name="web" placeholder="1-234-56758">
+        </div>
+        <div>
+            <label for="search">Search the site...</label>
+            <input type="search" id="search" name="search" placeholder="Wyatt Earp">
+        </div>
+        <div>
+            <label for="name">Your Name (first and last)</label>
+            <input id="name" name="name" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" placeholder="Dwight Schultz" required>
+        </div>
+        <div>
+            <label for="color">Your favorite color</label>
+            <input id="color" name="color" type="color">
+        </div>
+    </form>
+</body>
+
+</html>
