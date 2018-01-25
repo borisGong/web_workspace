@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        xmp {
+            background-color: aliceblue;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+
+        <li>
+            <h2>使用table实现</h2>
+            <div>
+                <div style="display:table;
+                            table-layout:fixed;
+                            width:100%;">
+                    <div style="background-color:#E91E63;
+                                width:100px;
+                                display:table-cell;">Huge thank you to Mozilla Developer Network and W3C for </div>
+                    <div style="display:table-cell;
+                                background-color:cornflowerblue;">Huge thank you to Mozilla Developer Network and W3C for the CSS Grid resources; ladies Jen Simmons and
+                        Rachel Andrew, who are major contributors to Grid, and it wouldn’t be where it’s at without them;
+                        and my amazing company, Planning Center ❤️, for allowing me the time to dive in and learn CSS Grid
+                        during Free Week.</div>
+                </div>
+            </div>
+            <xmp>
+.parent{display:table;table-layout:fixed;width:100%;} 
+.right,.left{display:table-cell;}
+.left{width:100px;}
+            </xmp>
+            <div><i></i></div>
+        </li>
+        <li>
+            <h2>使用flex实现</h2>
+            <div>
+                <div style="display:flex;">
+                    <div style="width:100px;
+                                background-color:#E91E63;">Huge thank you to Mozilla Developer Network and W3C for </div>
+                    <div style="flex:1;
+                                background-color:cornflowerblue;">Huge thank you to Mozilla Developer Network and W3C for the CSS Grid resources; ladies Jen Simmons and
+                        Rachel Andrew, who are major contributors to Grid, and it wouldn’t be where it’s at without them;
+                        and my amazing company, Planning Center ❤️, for allowing me the time to dive in and learn CSS Grid
+                        during Free Week.</div>
+                </div>
+            </div>
+            <xmp>.parent{display:flex;} .left{width:100px;} .right{flex:1;}</xmp>
+            <div><i>利用右侧容器的flex:1，均分了剩余的宽度，也实现了同样的效果。而align-items 默认值为stretch，故二者高度相等</i></div>
+        </li>
+        <li>
+            <h2>使用float+margin实现</h2>
+            <div style="overflow:hidden">
+                <div style="background-color:#E91E63;
+                                width:100px; 
+                                float:left">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div style="background-color:cornflowerblue;
+                                margin-left:100px;">Huge thank you to Mozilla Developer Network and W3C for the CSS Grid resources; ladies Jen Simmons and Rachel
+                    Andrew, who are major contributors to Grid, and it wouldn’t be where it’s at without them; and my amazing
+                    company, Planning Center ❤️, for allowing me the time to dive in and learn CSS Grid during Free Week.</div>
+            </div>
+            <xmp>
+left{float:left;width:100px;}
+.right{margin-left;margin-left:100px;}
+            </xmp>
+            <div><i>缺点是不等高，而且父类最好设置overflow触发BFC，该例子父类触发了BFC</i></div>
+        </li>
+        <li>
+            <h2>使用float+overflow实现</h2>
+            <div>
+                <div style="background-color:#E91E63;
+                                width:100px;
+                                float:left;">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div style="background-color:cornflowerblue;
+                                 overflow:hidden">Huge thank you to Mozilla Developer Network and W3C for the CSS Grid resources; ladies Jen Simmons and Rachel
+                    Andrew, who are major contributors to Grid, and it wouldn’t be where it’s at without them; and my amazing
+                    company, Planning Center ❤️, for allowing me the time to dive in and learn CSS Grid during Free Week.</div>
+            </div>
+            <xmp>
+.left{width:100px;float:left;}
+.right{overflow:hidden;}
+            </xmp>
+            <div><i>overflow:hidden，触发bfc模式，浮动无法影响，隔离其他元素，IE6不支持，左侧left设置margin-left当作left与right之间的边距，右侧利用overflow:hidden 进行形成bfc模式</i></div>
+        </li>
+        <li>
+                <h2>使用float+overflow实现且两列设置为等高</h2>
+                <div style="overflow:hidden;">
+                    <div style="background-color:#E91E63;
+                                    width:100px;
+                                    float:left;
+                                    padding-bottom:9999px;
+                                    margin-bottom:-9999px;">Huge thank you to Mozilla Developer Network and W3C for </div>
+                    <div style="background-color:cornflowerblue;
+                                     overflow:hidden;
+                                     padding-bottom:9999px;
+                                     margin-bottom:-9999px;">Huge thank you to Mozilla Developer Network and W3C for the CSS Grid resources; ladies Jen Simmons and Rachel
+                        Andrew, who are major contributors to Grid, and it wouldn’t be where it’s at without them; and my amazing
+                        company, Planning Center ❤️, for allowing me the time to dive in and learn CSS Grid during Free Week.</div>
+                </div>
+                <xmp>
+.left{width:100px;float:left;} 
+.right{overflow:hidden;}
+.parent{overflow:hidden;} 
+.left,.right{padding-bottom:9999px;margin-bottom:-9999px;} 
+                </xmp>
+                <div><i></i></div>
+            </li>
+    </ul>
+</body>
+
+</html>

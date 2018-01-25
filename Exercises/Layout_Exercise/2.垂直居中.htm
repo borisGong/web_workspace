@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        xmp {
+            background-color: aliceblue
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <h2>使用vertical-align</h2>
+            <div>
+                <div style="display:table-cell;
+                            vertical-align:middle;
+                            background-color:beige;
+                            height:200px;
+                            width:200px;">
+                    <div style="background-color:antiquewhite">垂直居中</div>
+                </div>
+            </div>
+            <xmp>
+.parent{ display:table-cell; vertical-align:middle; height:200px; width:200px; }
+            </xmp>
+            <div><i></i></div>
+        </li>
+        <li>
+            <h2>实用绝对定位</h2>
+            <div>
+                <div style="position:relative;
+                            background-color:beige;
+                            height:200px;
+                            width:200px;">
+                    <div style="position:absolute;
+                                top:50%;
+                                transform:translate(0,-50%);
+                                background-color:antiquewhite">
+                        垂直居中
+                    </div>
+                </div>
+            </div>
+            <xmp>
+.parent{position:relative;} 
+.child{positon:absolute;top:50%;transform:translate(0,-50%);}
+            </xmp>
+            <div><i></i></div>
+        </li>
+        <li>
+            <h2>实用flex实现</h2>
+            <div>
+                <div style="display:flex;
+                            align-items:center;
+                            background-color:beige;
+                            height:200px;
+                            width:200px;">
+                    <div style="background-color:antiquewhite">垂直居中</div>
+                </div>
+            </div>
+            <xmp>
+.parent{ display:flex; align-items:center; }
+            </xmp>
+            <div><i></i></div>
+        </li>
+    </ul>
+</body>
+
+</html>

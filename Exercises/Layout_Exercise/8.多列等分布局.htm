@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    xmp {
+        background-color: aliceblue;
+        font-size: 14px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li>
+            <style>
+                .parent-fix {
+                    margin-left: -20px;
+                }
+
+                .parent {
+                    display: table;
+                    width: 100%;
+                    table-layout: fixed;
+                }
+
+                .column {
+                    display: table-cell;
+                    padding-left: 20px;
+                }
+            </style>
+            <h2>使用table实现</h2>
+            <div class="parent">
+                <div class="column" style="background-color:#E91E63;">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div class="column" style="background-color:blue">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div class="column" style="background-color:aqua">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div class="column" style="background-color:blueviolet;">Huge thank you to Mozilla Developer Network and W3C for </div>
+            </div>
+            <xmp>
+.parent{display:table;table-layout:fixed;width:100%;} .column{display:table-cell;padding-left:20px;}
+            </xmp>
+            <div><i></i></div>
+        </li>
+        <li>
+            <style>
+                .parent1 {
+                    /* margin-left: -20px */
+                    overflow: hidden;
+                }
+                /*假设列之间的间距为20px*/
+
+                .column1 {
+                    float: left;
+                    width: 25%;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                }
+            </style>
+            <h2>实用float实现</h2>
+            <div class="parent1">
+                <div class="column1" style="background-color:#E91E63;">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div class="column1" style="background-color:blue">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div class="column1" style="background-color:aqua">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div class="column1" style="background-color:blueviolet;">Huge thank you to Mozilla Developer Network and W3C for </div>
+            </div>
+            <xmp>
+.parent1 { /* margin-left: -20px */ } /*假设列之间的间距为20px*/ .column1 { float: left; width: 25%; padding-left: 20px; box-sizing:border-box;}
+            </xmp>
+            <div><i></i></div>
+        </li>
+        <li>
+            <style>
+                .parent2 {
+                    display: flex;
+                }
+
+                .column2 {
+                    flex: 1;
+                }
+
+                .column2+.column2 {
+                    margin-left: 20px;
+                }
+            </style>
+            <h2>利用flex实现</h2>
+            <div class="parent2">
+                <div class="column2" style="background-color:#E91E63;">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div class="column2" style="background-color:blue">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div class="column2" style="background-color:aqua">Huge thank you to Mozilla Developer Network and W3C for </div>
+                <div class="column2" style="background-color:blueviolet;">Huge thank you to Mozilla Developer Network and W3C for </div>
+            </div>
+            <xmp>
+.parent{display:flex;} .column{flex:1;} .column+.column{margin-left:20px;}
+            </xmp>
+            <div><i></i></div>
+        </li>
+    </ul>
+</body>
+
+</html>

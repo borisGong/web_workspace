@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        xmp {
+            background-color: aliceblue;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+<ul>
+    <li>
+        <h2>使用table实现</h2>
+        <div style="display:table;table-layout:fixed;width:100%;">
+            <div name="row" style="display:table-row;">
+                <div name="item" style="display:table-cell;width:33.3%;height:200px;background-color:#E91E63;"> to Mozilla Developer NetworkHuge thank you to Mozilla Developer NetworkHuge thank </div>
+                <div name="item" style="display:table-cell;width:33.3%;height:200px;background-color:cornflowerblue;"> to Mozilla Developer NetworkHuge thank you to Mozilla Developer NetworkHuge thank </div>
+                <div name="item" style="display:table-cell;width:33.3%;height:200px;background-color:#E91E63;"> to Mozilla Developer NetworkHuge thank you to Mozilla Developer NetworkHuge thank </div>
+            </div>
+            <div name="row" style="display:table-row;">
+                <div name="item" style="display:table-cell;width:33.3%;height:200px;background-color:cornflowerblue;"> to Mozilla Developer NetworkHuge thank you to Mozilla Developer NetworkHuge thank </div>
+                <div name="item" style="display:table-cell;width:33.3%;height:200px;background-color:#E91E63;"> to Mozilla Developer NetworkHuge thank you to Mozilla Developer NetworkHuge thank </div>
+                <div name="item" style="display:table-cell;width:33.3%;height:200px;background-color:cornflowerblue;"> to Mozilla Developer NetworkHuge thank you to Mozilla Developer NetworkHuge thank </div>
+            </div>
+            <div name="row" style="display:table-row;">
+                <div name="item" style="display:table-cell;width:33.3%;height:200px;background-color:#E91E63;"> to Mozilla Developer NetworkHuge thank you to Mozilla Developer NetworkHuge thank </div>
+                <div name="item" style="display:table-cell;width:33.3%;height:200px;background-color:cornflowerblue;"> to Mozilla Developer NetworkHuge thank you to Mozilla Developer NetworkHuge thank </div>
+                <div name="item" style="display:table-cell;width:33.3%;height:200px;background-color:#E91E63;"> to Mozilla Developer NetworkHuge thank you to Mozilla Developer NetworkHuge thank </div>
+            </div>
+        </div>
+        <xmp>
+.parent{display:table;table-layout:fixed;width:100%;} 
+.row{display:table-row;} 
+.item{display:table-cell;width:33.3%;height:200px;}
+        </xmp>
+        <div><i></i></div>
+    </li>
+    <li>
+        <h2>实用flex实现</h2>
+        <div style="display:flex;flex-direction:column;">
+            <div name="row" style="height:100px;display:flex;">
+                <div name="item" style="width:100px;background:red;"></div>
+                <div name="item" style="width:100px;background-color:cornflowerblue;"></div>
+                <div name="item" style="width:100px;background:red;"></div>
+            </div>
+            <div name="row" style="height:100px;display:flex;">
+                <div name="item" style="width:100px;background-color:cornflowerblue;"></div>
+                <div name="item" style="width:100px;background:red;"></div>
+                <div name="item" style="width:100px;background-color:cornflowerblue;"></div>
+            </div>
+            <div name="row" style="height:100px;display:flex;">
+                <div name="item" style="width:100px;background:red;"></div>
+                <div name="item" style="width:100px;background-color:cornflowerblue;"></div>
+                <div name="item" style="width:100px;background:red;"></div>
+            </div>
+        </div>
+        <xmp>
+.parent{display:flex;flex-direction:column;} 
+.row{height:100px;display:flex;} 
+.item{width:100px;background:red;}               
+        </xmp>
+        <div><i></i></div>
+    </li>
+</ul>
+</body>
+
+</html>
