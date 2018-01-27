@@ -7,7 +7,7 @@
         this.oldWidth = null;
     }
 
-    function DataGrid(data) {
+    function DataGrid(setttings) {
         var dataGrid = [];
         dataGrid[dataGrid.length++] = '<table cellspacing="0" cellpadding="0">';
         dataGrid[dataGrid.length++] = '<tbody>';
@@ -67,7 +67,7 @@
 
         return this.each(function () {
             var dataGrid = new DataGrid(setttings);
-            $(this).append(dataGrid);
+            $(this).append(dataGrid.view);
         });
     }
 })();

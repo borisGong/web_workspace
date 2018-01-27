@@ -1,0 +1,41 @@
+资源：
+https://www.cnblogs.com/xuan52rock/p/4459398.html
+https://www.cnblogs.com/moltboy/archive/2013/03/29/2989879.html
+
+
+1. 盒式结构是什么？
+    由内容区域，内边距，边框，外边距组成的一个矩形框
+
+2. 盒式结构的组成？
+    内边距，边框，外边距，例如水平方向:左外边距，左边框，左内边距，元素宽度，右内边距，右边框，右外边框 
+
+3. 内边距Vs边框Vs外边距？
+    相同点：内边距，边框，外边距 是可选的，默认值为零 
+    不同点：内边距和边框不能设置auto，外边距是可以设置auto的
+
+4. 盒式结构水平方向宽度计算公式？
+   内边距宽度 + 边框宽度 + 元素宽度 + 外边距宽度 = 父类块的宽度
+   应用：
+       margin：auto 0 水平居中原因，默认情况内边距和边框都是为零的，当你设置元素宽度同时设置margin:auto 0的时候，左/右margin宽度 = (父类块宽度 - 元素宽度)/2
+
+5. width、margin-left、margin-right 三个属性各自设置成 auto 的区别
+
+    (1).三个属性均未设置为auto
+        当这三个属性都未被设置为auto时，margin-right总是会被强制设置为auto。这意味着margin-right会被设置成一个值以使框的七属性的值的总和达到父元素的width值。
+    
+    (2).margin-left、margin-right被显式声明，width被设置为auto
+        在这种情况下，width被设置为一个值以达到所需要的总宽度。
+    
+    (3).margin-left、margin-right设置成auto，width显式设定
+        这样的话两个边界会被设置成各占50％的宽度，即相同的宽度。这样会使元素在其父元素中居中。
+
+    (4).一个边界显式设定，另一个边界和width设置为auto
+        在这种情况下，设置为auto的边界会被强制的设置为0。而width则会设置成达到总需求所需要的值。
+    
+    (5).三个属性均被设置为auto
+        在这种情况下，两个边界会被设置为0，width设置为最大可能值
+
+6. margin:auto 和 text-align:center区别
+    text-align:ceneter是对文字和内联元素进行居中
+    margin:auto是对块状元素进行居中
+
