@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 
+        关于负的margin能增加元素的宽度，能不能这么来理解，根据盒子模型的计算方法，
+        占据的横向宽度=width + padding-left + padding-right + border-left + border-right + margin-left +margin-right
+        子块级元素的宽度没有设定，那么就应该是自动占据满整个父元素的宽，也就是说，盒子模型占据的宽度是固定的，当横向上的margin是负数的时候，只有增加width，才能让等式继续成立
+     -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 400px;
+            height: 200px;
+            margin: auto 0;
+            border: 1px solid lightseagreen;
+            position: relative;
+            left: 300px;
+        }
+
+        .test_block {
+            height: 100%;
+            background-color: lightgoldenrodyellow;
+            margin-right: -100px;
+            margin-left: -100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="test_block"></div>
+    </div>
+</body>
+
+</html>

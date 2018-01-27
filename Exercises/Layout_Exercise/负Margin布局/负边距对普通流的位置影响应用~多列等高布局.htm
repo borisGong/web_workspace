@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 
+        优点：兼容性好
+        缺点：1 .由于.container { overflow:hidden;} 这个布局有个后遗症：
+              页面中若含有特殊的UI组件需要超出.container显示，比如
+                - 日期选择器
+                - 某隐藏的绝对定位的超长菜单
+               此情况下，超出部分会被截去。
+
+               解决方案：可以把这些弹出的ui组件绑定到body上,无碍的
+
+         */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            overflow: hidden; 
+        }
+        .left {
+            display: inline-block;
+            vertical-align: top;
+            background-color: lightgreen;
+            width: 30%; 
+            padding-bottom: 2000px;
+            margin-bottom: -2000px;
+        }
+
+        .right {
+            display: inline-block;
+            vertical-align: top;
+            background-color: lightpink;
+            width: 69%; 
+            padding-bottom: 2000px;
+            margin-bottom: -2000px;
+        }
+    </style>
+</head>
+
+<body> 
+    <div class="container">
+        <div class="left">
+            等高布局有几种不同的方法，但目前为止我认为浏览器兼容最好最简便的应该是padding补偿法。首先把列的padding-bottom设为一个足够大的值，再把列的margin-bottom设一个与前面的padding-bottom的正值相抵消的负值，父容器设置超出隐藏，这样子父容器的高度就还是它里面的列没有设定padding-bottom时的高度，当它里面的任一列高度增加了，则父容器的高度被撑到它里面最高那列的高度，其他比这列矮的列则会用它们的padding-bottom来补偿这部分高度差。因为背景是可以用在padding占用的空间里的，而且边框也是跟随padding变化的，所以就成功的完成了一个障眼法。
+        </div>
+        <div class="right">
+            等高布局有几种不同的方法，但目前为止我认为浏览器兼容最好最简便的应该是padding补偿法。首先把列的padding-bottom设为一个足够大的值，再把列的margin-bottom设一个与前面的padding-bottom的正值相抵消的负值，父容器设置超出隐藏，这样子父容器的高度就还是它里面的列没有设定padding-bottom时的高度，当它里面的任一列高度增加了，则父容器的高度被撑到它里面最高那列的高度，其他比这列矮的列则会用它们的padding-bottom来补偿这部分高度差。因为背景是可以用在padding占用的空间里的，而且边框也是跟随padding变化的，所以就成功的完成了一个障眼法。
+            等高布局有几种不同的方法，但目前为止我认为浏览器兼容最好最简便的应该是padding补偿法。首先把列的padding-bottom设为一个足够大的值，再把列的margin-bottom设一个与前面的padding-bottom的正值相抵消的负值，父容器设置超出隐藏，这样子父容器的高度就还是它里面的列没有设定padding-bottom时的高度，当它里面的任一列高度增加了，则父容器的高度被撑到它里面最高那列的高度，其他比这列矮的列则会用它们的padding-bottom来补偿这部分高度差。因为背景是可以用在padding占用的空间里的，而且边框也是跟随padding变化的，所以就成功的完成了一个障眼法。
+        </div>
+    </div>
+</body>
+
+</html>
