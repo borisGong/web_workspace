@@ -7,17 +7,21 @@ https://www.cnblogs.com/zhangyongl/p/6123522.html
 
     1. 把margin设为auto：
 
-        具体来说就是把要居中的元素的margin-left和margin-right都设为auto，此方法只能进行水平的居中，且对浮动元素或绝对定位元素无效。
+        具体来说就是把要居中的块状元素元素的margin-left和margin-right都设为auto，此方法只能进行水平的居中，且对浮动元素或绝对定位元素无效。
         
         优点：兼容性好 
         缺点: 需要指定宽度
+
+        注意：应用的是块状元素
 
     2. 使用 text-align:center:
 
         这个没什么好说的，只能对图片，按钮，文字等行内元素(display为inline或inline-block等)进行水平居中。但要说明的是在IE6、7这两个奇葩的浏览器中，它是能对任何元素进行水平居中的。
 
         优点：兼容性好； 
-        缺点：需要同时设置子元素和父元素
+        缺点：需要同时设置子元素(display:inline-block)和父元素(text-align:center)
+
+        注意：应用的内联元素
     
     3. 使用line-height让单行的文字垂直居中
 
