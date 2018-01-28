@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .parent {
+            width: 500px;
+            height: 500px;
+            background-color: lightgreen;
+        }
+
+        .wrap {
+            float: left;
+            position: relative;
+            left: 50%;
+            background-color: lightcoral;
+            clear: both;
+        }
+
+        .child {
+            background-color: lightslategray;
+            position: relative;
+            left: -50%;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="wrap">
+            <div class="child">宽度1</div>
+            <div class="child">宽度2222222</div>
+        </div>
+    </div>
+</body>
+
+</html>

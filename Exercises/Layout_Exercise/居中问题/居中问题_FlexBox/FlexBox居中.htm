@@ -7,22 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style type="text/css">
+        .parent1 {
+            display: flex;
+            justify-content: center;
+            background-color: beige;
+        }
+
+        .child1 {
+            background-color: antiquewhite
+        }
+
+        .parent2 {
+            display: flex;
+            background-color: beige;
+        }
+
+        .child2 {
+            margin: 0 auto;
+            background-color: antiquewhite
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <div style="display:flex;
-                            justify-content:center;
-                            background-color:beige;">
-            <div style="background-color:antiquewhite">块水平居中</div>
+        <div class="parent1">
+            <div class="child1">块水平居中</div>
         </div>
     </div>
 
-    <div style="display:flex;
-                            background-color:beige;">
-        <div style="margin:0 auto;
-                                background-color:antiquewhite">块水平居中</div>
+    <div class="parent2">
+        <div class="child2">块水平居中</div>
     </div>
 </body>
 
